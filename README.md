@@ -7,6 +7,7 @@ The Payger SDK for PHP is a library that enables PHP developers to easily make r
 
 To use the library you must first set the pair Key and Secret as the library Username and Password. Please use set userName and setPassword for this. After that you must call connect which will generate a new token for authentication. The following request will use the token and if it expires will request for a new one.
 
+## Set credentials, connect and generate a new token
 ```
 Payger::setUsername( $key );
 Payger::setPassword( $secret );
@@ -15,6 +16,7 @@ Payger::connect();
 
 After that is pretty straight forward methods get, post put or delete depending on what you want from the API, please see some examples below.
 
+##Exchange Rates - get current rate for conversion between your currency and a crypto currency
 ```
 $args = array(
 		'from'   => 'USD',
@@ -22,8 +24,10 @@ $args = array(
 		'amount' => 3.00
 	);
 $response = Payger::get( 'merchants/exchange-rates', $args );
+```
 
-
+## Creates new payment
+````
 $args = array (
 		'externalId'        => '001',
 		'description'       => 'Description',
@@ -37,10 +41,10 @@ $args = array (
 	);
 
 $response = Payger::post( 'merchants/payments/', $args );
-
-
+````
+## Cancel Payment
+```
 Payger::delete( 'merchants/payments/' . $payment_id );
-
 ```
 
 
