@@ -1,0 +1,23 @@
+{
+  "name": "payger/php-sdk",
+  "description": "The Payger SDK for PHP is a library that enables PHP developers to easily make requests to the Payger Merchant API.",
+  "keywords": ["payger", "woocommerce", "payment gateways"],
+  "homepage": "https://github.com/Payger/PHP-SDK",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Payger",
+      "homepage": "https://payger.com/",
+      "role": "Developer"
+    },
+    {
+      "name": "Widgilabs",
+      "homepage": "http://www.widgilabs.com/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
+
