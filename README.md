@@ -47,7 +47,7 @@ $response = Payger::post( 'merchants/payments/', $args );
 Payger::delete( 'merchants/payments/' . $payment_id );
 ```
 
-#Installation
+# Installation
 
 Payger PHP-SDK is a developer library, not a plugin, which means you need to include it somewhere in your own project. You can use Composer:
 
